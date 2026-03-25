@@ -2,10 +2,10 @@
 
 ## Context
 
-Im `sportplan` Repo liegt unter `src/components/AnnualSportPlan.tsx` ein funktionierender React-Prototyp für meinen Jahres-Sportplan. Das Repo nutzt aktuell Vite + React + TypeScript.
+Im `sportplan` Repo (`pschmeing/sportplan`) liegt unter `src/components/AnnualSportPlan.tsx` ein funktionierender React-Prototyp für meinen Jahres-Sportplan. Das Repo ist frisch erstellt und hat noch kein Build-Setup.
 
 Mein bestehender Stack:
-- **GitHub**: `pschmeing/sportplan` (React/TS/Vite)
+- **GitHub**: `pschmeing/sportplan` (neues Repo, nur Prototyp-Komponente + diese Spec)
 - **Vercel**: Deployment (mit Custom Domain möglich über Cloudflare)
 - **Supabase**: Bereits vorhanden als DB (Projekt existiert)
 - **Cloudflare**: DNS für philippschmeing.com
@@ -14,7 +14,7 @@ Mein bestehender Stack:
 
 ## Aufgabe
 
-Baue den Prototyp aus `AnnualSportPlan.tsx` zu einer produktionsfertigen App aus. Die App soll als eigene Vercel-Deployment laufen (z.B. `sportplan.philippschmeing.com` oder `philippschmeing.com/fitness/sportplan`).
+Baue den Prototyp aus `AnnualSportPlan.tsx` zu einer produktionsfertigen App aus. Setze dafür ein Next.js Projekt auf (für API Routes + Cron). Die App soll als eigene Vercel-Deployment laufen unter `sportplan.philippschmeing.com`.
 
 ### 1. Supabase Schema aufsetzen
 
@@ -137,7 +137,7 @@ Erstelle auf der ps_homepage unter `/fitness` oder `/fitness/sportplan` einen if
 
 ## Reihenfolge
 
-1. Evaluiere ob Migration zu Next.js sinnvoll ist (wegen API Routes + Cron) — falls ja, migriere zuerst
+1. Setze ein Next.js Projekt auf (App Router) mit Tailwind CSS + TypeScript
 2. Supabase Schema + Seed
 3. API Layer (Read + Write)
 4. Refactore UI-Komponente auf Supabase statt lokalem State
